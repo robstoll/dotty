@@ -413,10 +413,11 @@ the call from `assert` to `assertImpl` phase-correct, even if we
 assume that both definitions are local.
 
 
-<!-- IMO requires an explanation, why is it important? -->
-The `inline` modifier is used to declare a `val` that is
-either a constant or is a parameter that will be a constant when instantiated. This
-aspect is also important for macro expansion.
+The `inline` modifier can be used to declare a `val` that needs to
+be initialised with a constant expression.
+It can also be used for parameters where such a parameter is inlined,
+which means a constant expression can further be folded after inlining the `inline def`.
+This aspect is also important for macro expansion.
 
 `Expr` provides the method `getValue` (and `value`).
 This will convert the `Expr[T]` into a `Some[T]` (or `T`) when the expression 
