@@ -11,8 +11,7 @@ be a big step towards realizing the full potential of these ideas. Its main obje
 - simplify where possible,
 - eliminate inconsistencies and surprising behaviors,
 - build on strong foundations to ensure the design hangs well together,
-- consolidate language constructs to improve the language’s consistency, safety, ergonomics, and performance.
-
+- consolidate language constructs to improve the language’s consistency, safety, ergonomics, and performance
 In this documentation you will find information on how to use the Dotty compiler on your machine,
 navigate through the code, setup Dotty with your favorite IDE and more!
 
@@ -20,3 +19,4 @@ Table of Contents
 =================
 {% assign titles = sidebar.titles %}
 {% include "table-of-contents" %}
+
